@@ -1,0 +1,30 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Analiza matematyczna"
+  },
+  {
+    "id": 2,
+    "name": "Algebra liniowa"
+  },
+  {
+    "id": 3,
+    "name": "Fizyka"
+  },
+  {
+    "id": 4,
+    "name": "Programowanie obiektowe"
+  },
+  {
+    "id": 5,
+    "name": "Bazy danych"
+  },
+  {
+    "id": 6,
+    "name": "Statystyka"
+  },
+  {
+    "id": 7,
+    "name": "Logika matematyczna"
+  }
+]

@@ -1,0 +1,104 @@
+﻿[
+  {
+    "id": 1,
+    "grade": 3.5,
+    "courseId": 1,
+    "studentId": 1
+  },
+  {
+    "id": 2,
+    "grade": 4.0,
+    "courseId": 3,
+    "studentId": 1
+  },
+  {
+    "id": 3,
+    "grade": 2.0,
+    "courseId": 5,
+    "studentId": 1
+  },
+  {
+    "id": 4,
+    "grade": 5.0,
+    "courseId": 6,
+    "studentId": 1
+  },
+  {
+    "id": 4,
+    "grade": 3.0,
+    "courseId": 7,
+    "studentId": 1
+  },
+  {
+    "id": 5,
+    "grade": 5.0,
+    "courseId": 3,
+    "studentId": 2
+  },
+  {
+    "id": 6,
+    "grade": 4.5,
+    "courseId": 4,
+    "studentId": 2
+  },
+  {
+    "id": 7,
+    "grade": 2.0,
+    "courseId": 1,
+    "studentId": 3
+  },
+  {
+    "id": 8,
+    "grade": 2.0,
+    "courseId": 2,
+    "studentId": 3
+  },
+  {
+    "id": 9,
+    "grade": 3.0,
+    "courseId": 3,
+    "studentId": 3
+  },
+  {
+    "id": 10,
+    "grade": 4.0,
+    "courseId": 4,
+    "studentId": 3
+  },
+  {
+    "id": 11,
+    "grade": 4.0,
+    "courseId": 5,
+    "studentId": 4
+  },
+  {
+    "id": 12,
+    "grade": 4.0,
+    "courseId": 6,
+    "studentId": 4
+  },
+  {
+    "id": 13,
+    "grade": 4.0,
+    "courseId": 7,
+    "studentId": 4
+  },
+  {
+    "id": 14,
+    "grade": 4.0,
+    "courseId": 3,
+    "studentId": 5
+  },
+  {
+    "id": 15,
+    "grade": 4.5,
+    "courseId": 4,
+    "studentId": 5
+  },
+  {
+    "id": 16,
+    "grade": 2.0,
+    "courseId": 5,
+    "studentId": 5
+  }
+]

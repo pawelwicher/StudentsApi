@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Courses.json" />
+    <None Remove="Grades.json" />
+    <None Remove="Students.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Json\Courses.json" />
+    <EmbeddedResource Include="Json\StudentCourses.json" />
+    <EmbeddedResource Include="Json\Students.json" />
+  </ItemGroup>
+
+</Project>

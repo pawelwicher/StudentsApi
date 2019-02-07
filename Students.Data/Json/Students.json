@@ -1,0 +1,32 @@
+﻿[
+  {
+    "id": 1,
+    "firstName": "Jan",
+    "lastName": "Styczeń",
+    "indexNumber": 223344
+  },
+  {
+    "id": 2,
+    "firstName": "Piotr",
+    "lastName": "Luty",
+    "indexNumber": 323245
+  },
+  {
+    "id": 2,
+    "firstName": "Anna",
+    "lastName": "Marzec",
+    "indexNumber": 213425
+  },
+  {
+    "id": 4,
+    "firstName": "Ryszard",
+    "lastName": "Kwiecień",
+    "indexNumber": 544321
+  },
+  {
+    "id": 5,
+    "firstName": "Krystyna",
+    "lastName": "Maj",
+    "indexNumber": 222345
+  }
+]
