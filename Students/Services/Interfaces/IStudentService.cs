@@ -7,6 +7,6 @@ namespace Students.Services.Interfaces
     {
         IEnumerable<StudentListDto> GetStudents();
 
-        StudentDetailDto GetStudent(int id);
+        StudentDto GetStudent(int id);
     }
 }

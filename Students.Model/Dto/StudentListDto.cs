@@ -4,14 +4,12 @@
     {
         public int Id { get; set; }
 
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
+        public string LastNameAndFirstName { get; set; }
 
         public int IndexNumber { get; set; }
 
-        public int CoursesPassedCount { get; set; }
+        public int NumberOfCoursesPassed { get; set; }
 
-        public int CoursesFailedCount { get; set; }
+        public int NumberOfCoursesFailed { get; set; }
     }
 }

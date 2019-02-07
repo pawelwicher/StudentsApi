@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using Students.Data;
-using Students.Model.Domain;
+using Students.Model;
 using Students.Repositories.Interfaces;
 
 namespace Students.Repositories

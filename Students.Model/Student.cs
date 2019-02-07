@@ -1,4 +1,4 @@
-﻿namespace Students.Model.Domain
+﻿namespace Students.Model
 {
     public class Student
     {
@@ -8,6 +8,6 @@
 
         public string LastName { get; set; }
 
-        public int IndexNumber { get; set; }
+        public int Index { get; set; }
     }
 }

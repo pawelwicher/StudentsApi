@@ -1,4 +1,4 @@
-﻿namespace Students.Model.Domain
+﻿namespace Students.Model
 {
     public class Course
     {

@@ -23,38 +23,37 @@ namespace Students.Services
         public IEnumerable<StudentListDto> GetStudents()
         {
             var students = this.studentRepository.Get();
-            var courses = this.courseRepository.Get();
             var studentCourses = this.studentCourseRepository.Get();
 
-            return students.Select(student => new StudentListDto
-            {
-                Id = student.Id,
-                FirstName = student.FirstName,
-                LastName = student.LastName,
-                IndexNumber = student.IndexNumber,
-                CoursesPassedCount = studentCourses.Where(course => course.StudentId == student.Id && course.Grade >= 3.0M).Count(),
-                CoursesFailedCount = studentCourses.Where(course => course.StudentId == student.Id && course.Grade < 3.0M).Count()
-            }).OrderBy(x => x.LastName);
+            return students
+                .OrderBy(x => x.LastName)
+                .Select(student => new StudentListDto
+                {
+                    Id = student.Id,
+                    LastNameAndFirstName = $"{student.LastName} {student.FirstName}",
+                    IndexNumber = student.Index,
+                    NumberOfCoursesPassed = studentCourses.Where(course => course.StudentId == student.Id && course.Grade >= 3.0M).Count(),
+                    NumberOfCoursesFailed = studentCourses.Where(course => course.StudentId == student.Id && course.Grade < 3.0M).Count()
+                });
         }
 
-        public StudentDetailDto GetStudent(int id)
+        public StudentDto GetStudent(int id)
         {
             var student = this.studentRepository.Get().Where(x => x.Id == id).FirstOrDefault();
 
             if (student != null)
             {
-                var courses = this.courseRepository.Get();
+                var courses = this.courseRepository.Get().ToDictionary(x => x.Id);
                 var studentCourses = this.studentCourseRepository.Get().Where(x => x.StudentId == student.Id);
 
-                return new StudentDetailDto
+                return new StudentDto
                 {
-                    FirstName = student.FirstName,
-                    LastName = student.LastName,
-                    IndexNumber = student.IndexNumber,
+                    LastNameAndFirstName = $"{student.LastName} {student.FirstName}",
+                    IndexNumber = student.Index,
                     Courses = studentCourses.Select(x => new StudentCoursesListDto
                     {
                         Grade = x.Grade,
-                        Name = courses.Where(course => course.Id == x.CourseId).FirstOrDefault().Name
+                        Name = courses[x.CourseId].Name
                     })
                 };
             }

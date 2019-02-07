@@ -1,4 +1,4 @@
-﻿using Students.Model.Domain;
+﻿using Students.Model;
 using System.Collections.Generic;
 
 namespace Students.Repositories.Interfaces
