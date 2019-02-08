@@ -22,8 +22,8 @@ namespace Students.Services
 
         public IEnumerable<StudentListDto> GetStudents()
         {
-            var students = this.studentRepository.Get();
-            var studentCourses = this.studentCourseRepository.Get();
+            var students = this.studentRepository.GetAll();
+            var studentCourses = this.studentCourseRepository.GetAll();
 
             return students
                 .OrderBy(x => x.LastName)
@@ -39,12 +39,12 @@ namespace Students.Services
 
         public StudentDto GetStudent(int id)
         {
-            var student = this.studentRepository.Get().Where(x => x.Id == id).FirstOrDefault();
+            var student = this.studentRepository.GetAll().Where(x => x.Id == id).FirstOrDefault();
 
             if (student != null)
             {
-                var courses = this.courseRepository.Get().ToDictionary(x => x.Id);
-                var studentCourses = this.studentCourseRepository.Get().Where(x => x.StudentId == student.Id);
+                var courses = this.courseRepository.GetAll().ToDictionary(x => x.Id);
+                var studentCourses = this.studentCourseRepository.GetAll().Where(x => x.StudentId == student.Id);
 
                 return new StudentDto
                 {

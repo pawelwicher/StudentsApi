@@ -5,6 +5,6 @@ namespace Students.Repositories.Interfaces
 {
     public interface IStudentCourseRepository
     {
-        IEnumerable<StudentCourse> Get();
+        IEnumerable<StudentCourse> GetAll();
     }
 }

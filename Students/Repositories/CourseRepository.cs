@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
-using Newtonsoft.Json;
-using Students.Data;
+using Students.DataAccess;
 using Students.Model;
 using Students.Repositories.Interfaces;
 
@@ -8,9 +7,9 @@ namespace Students.Repositories
 {
     public class CourseRepository : ICourseRepository
     {
-        public IEnumerable<Course> Get()
+        public IEnumerable<Course> GetAll()
         {
-            return JsonConvert.DeserializeObject<IEnumerable<Course>>(FakeApi.GetCoursesJson());
+            return FakeDb.GetAllCourses();
         }
     }
 }
